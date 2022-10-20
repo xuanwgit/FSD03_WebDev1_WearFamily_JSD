@@ -1,0 +1,297 @@
+@charset 'utf-8';
+
+/* Developed by: Quynh Ly Do
+                 Marcelo Di Liscia
+                 Xuan Want
+                 Vivien Yep
+   Script Date:  Apr 3, 2022
+*/
+:root {
+    --custom-blue:rgba(72, 104, 209, 0.8);
+    --custom-purple:rgba(135, 16, 190, 0.8);
+}
+
+#WearTitle {
+    font-size: 3.0rem;
+    color: var(--custom-blue)
+}
+@media (max-width: 768px) {
+    #WearTitle{
+      font-size: 2.5rem;
+    }
+}
+@media (max-width: 576px) {
+    #WearTitle{
+      font-size: 2.0rem;
+    }
+}
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;    
+    vertical-align: middle;
+}
+
+.flyerTitle {
+    font-family: 'Kaushan Script', cursive;    
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 5rem 0 1rem;
+    background-color: var(--bs-blue);
+    color: white;
+}
+
+.flyerTitle {
+    font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+    .flyerTitle {
+      font-size: 3.0rem;
+    }
+}
+
+#userTotal {
+    color: blue;
+}
+
+/* ********** HOME ******** */
+#menuSearchBar {
+    float: right;
+    width: 30%;
+}
+.userInfo {
+    width: 100%;
+}
+
+.userInfo img{
+    height: 30px;
+}
+@media (max-width: 576px) {
+    .userInfo img {
+        height: 20px;
+    }
+}
+
+/* Navigation bar colors */
+.navbar-nav {
+    padding: 0px 10px;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .dropdown-item {
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.navbar-nav a:hover {
+    background-color: lightblue;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-purple);
+}
+
+.dropdown {
+    position: static !important;
+}
+  
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top: 0px !important;
+    width: 100% !important;
+}
+
+.navPictures {
+    height: 200px;
+    width: auto;
+    float:left;
+    margin: 0 15px 0 5px;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+}
+.slides {
+    display: none;
+    animation-name: fade-carousel;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-carousel {
+    from {opacity: 0.2;}
+    to {opacity: 1.0;}
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.slide-description {
+    width: 100%;
+    padding: 20px 20px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(88, 88, 88);
+    background-color: rgba(210, 231, 236, 0.63);
+}
+
+
+.left-arrow, .right-arrow {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 40%;
+    background-color: rgba(141, 141, 141, 0.438);
+    padding: 10px;
+}
+
+.right-arrow {
+    right: 0px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: rgba(116, 114, 114, 0.438);
+}
+
+.dots {
+    bottom: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: var(--bs-blue);
+    border-radius: 50%;
+    display: inline-block;
+    bottom: 15px;
+}
+
+.active-slide {
+    background-color: var(--custom-bg-blue);
+}
+
+.dot:hover {
+    background-color: white;
+}
+
+/* Main page flyers */
+.gallery-img {
+    width: 100%;
+}
+
+
+/* Activities filter */
+.filter-img {
+    width: 100%;
+}
+
+.filter-img:hover {
+    animation-name: hover-filter;
+    animation-duration: 1.5s;
+}
+
+@keyframes hover-filter {
+    25%{transform: scale(1.0);}
+    75%{transform: scale(1.1);}
+}
+
+
+/* Scroll-to-top */
+#scroll-top {
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 100;
+}
+
+#subscribe {
+    color: var(--bs-blue);
+    margin-bottom: 0;
+}
+#subscribePrivate {
+    font-size: small;
+}
+
+/*********************************************
+        		Theme Elements
+*********************************************/
+
+.gold{
+	color: #FFBF00;
+}
+
+/*********************************************
+					PRODUCTS CSS
+*********************************************/
+#item-display{
+    width: 100%;
+}
+
+.product-title{
+	font-size: 20px;
+}
+
+.product-price{
+	font-size: 22px;
+}
+
+.product-info{
+		margin-top: 50px;
+}
+
+/*********************************************
+					VIEW
+*********************************************/
+
+.content-wrapper {
+	max-width: 1140px;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.container-fluid{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.view-wrapper {
+	float: right;
+	max-width: 70%;
+	margin-top: 25px;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	max-width: 100%;
+}
+
+/*********************************************
+				END OF PRODUCTS CSS
+*********************************************/
+
+#cartError, #cartUpdated, #checkoutError  {
+    display: none;
+}
